@@ -1,5 +1,6 @@
 package com.example_Spring.SpringProjectLearn;
-import GamePackage.*;
+import GamePackage.Game;
+import GamePackage1.*;
 
 
 import org.springframework.context.annotation.Bean;
@@ -8,19 +9,20 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BasicJavaConfiguration {
     @Bean
-    public  PowerPuffGirls Game1(){
-        return new PowerPuffGirls();
-
+    public PowerPuffGirls01 Game1(){
+        return new PowerPuffGirls01();
     }
+
 
     @Bean
-    public MarioGame Game2(){
-        return new MarioGame();
+    public MarioGame01 Game2(){
+        return new MarioGame01();
 
     }
     @Bean
-    public GameRunner GameConsole(Game Game2){
-        return new GameRunner(Game2);
+    public GameRunner02 GameRun(Game Game2){
+        return new GameRunner02 (Game2);
     }
+
 
 }

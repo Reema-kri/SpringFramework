@@ -1,6 +1,13 @@
 
 package GamePackage;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
+    @Autowired
     Game game;
 
     public GameRunner(Game gameRef){
@@ -9,10 +16,7 @@ public class GameRunner {
     }
     public void Run(){
         this.game.Run();
-        this.game.Left();
-        this.game.Right();
-        this.game.Up();
-        this.game.Down();
+
 
     }
 }

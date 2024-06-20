@@ -1,11 +1,8 @@
-package GamePackage;
+package GamePackage1;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
+import GamePackage.Game;
 
-@Component
-
-public class PowerPuffGirls implements Game{
+public class PowerPuffGirls01 implements Game {
     public void Run(){
         System.out.println("PowerPuffGirls is Running");
         this.Left();
@@ -29,6 +26,5 @@ public class PowerPuffGirls implements Game{
     public void Down(){
         System.out.println("PowerPuffGirls is going Down");
     }
-
 
 }

@@ -1,12 +1,8 @@
-package GamePackage;
+package GamePackage1;
 
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
+import GamePackage.Game;
 
-@Component
-@Primary
-public class MarioGame implements Game{
+public class MarioGame01 implements Game {
     public void Run(){
         System.out.println("Mario is Running");
         this.Left();
@@ -30,5 +26,4 @@ public class MarioGame implements Game{
     public void Down(){
         System.out.println("Mario is going Down");
     }
-
 }
